@@ -168,6 +168,7 @@ const ChildDetail = () => {
                 </div>
               </CardHeader>
               <CardContent>
+                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
                 {thumbnail && (
                   <div className="mb-6 flex justify-center">
                     <img
@@ -177,7 +178,7 @@ const ChildDetail = () => {
                     />
                   </div>
                 )}
-                <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
+
                 <div
                   className="text-gray-700 mb-4 whitespace-pre-line"
                   dangerouslySetInnerHTML={{ __html: post.content }}

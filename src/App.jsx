@@ -23,6 +23,7 @@ import AdminUserDetail from "./pages/AdminUserDetail";
 import AdminManagerManagement from "./pages/AdminManagerManagement";
 import AdminLogManagement from "./pages/AdminLogManagement";
 import AdminBoardManagement from "./pages/AdminBoardManagement";
+import AdminBoardDetailManagement from "./pages/adminBoardDetailManagement.jsx";
 import AdminAdvertisementManagement from "./pages/AdminAdvertisementManagement";
 import MyPage from "./pages/AdminMyPage.jsx";
 import LoginPage from "./pages/LoginPage";
@@ -115,6 +116,10 @@ const App = () => (
                     />
                     <Route path="logs" element={<AdminLogManagement />} />
                     <Route path="boards" element={<AdminBoardManagement />} />
+                    <Route
+                      path="board-detail/:type/:postId"
+                      element={<AdminBoardDetailManagement />}
+                    />
                     <Route path="banner" element={<AdminBannerManagement />} />
                     <Route path="support" element={<AdminCustomerSupport />} />
                     <Route

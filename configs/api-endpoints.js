@@ -77,6 +77,12 @@ export const API_ENDPOINTS = {
     LOGS: "/admin-service/logs",
     LOG_LIST: "/admin-service/admin/log/list",
     INFORM_LIST: "/admin-service/admin/inform/list",
+    // 관리자 게시판 관련
+    BOARD_LIST: (category) => `/admin-service/admin/board/list/${category}`,
+    ANIMAL_LIST: "/admin-service/admin/board/list",
+    BOARD_DETAIL: (category, postId) =>
+      `/admin-service/admin/board/detail/${category}/${postId}`,
+    ANIMAL_DETAIL: (postId) => `/admin-service/admin/board/detail/${postId}`,
   },
 
   // 고객 지원
